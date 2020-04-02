@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="xu-ly.js"></script>
+    <link rel="stylesheet" href="layout.css" type="text/css">
+</head>
+
+<body>
+    <div id="roomHienTai"></div>
+    <input type="text" name="" id="txtMessRoom">
+    <input type="button" value="send" id="btnMessRoom">
+
+    <div id="wrapper">
+        <div id="loginForm">
+            <h3>What's your name?</h3>
+            <input type="text" id="txtUserName">
+            <input type="button" value="Register" id="btnRegister">
+        </div>
+
+        <div id="chatForm">
+            <div id="room">
+                <input type="text" id="txtRoom">
+                <input type="button" value="Tao Room" id="btnRoom">
+            </div>
+            <div id="left">
+                <div id="boxTitle">User Online</div>
+                <div id="boxContent"></div>
+
+                <!-- Room -->
+                <h3 id="Room">Room dang co</h3>
+                <div id="boxRoom"></div>
+            </div>
+            <div id="right">
+                <div id="sayHi">Hello <span id="currentUser">Tefo</span>
+                    <input type="button" value="Logout" id="btnLogout">
+                </div>
+
+                <div id="listMessages">
+                    <div id="listMes"></div>
+                    <div id="noti"></div>
+                </div>
+
+                <input type="text" id="txtMessage">
+                <input type="button" name="" value="Send" id="btnSendMessage">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
