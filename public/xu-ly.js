@@ -1,4 +1,5 @@
-var socket = io("http://localhost:3000")
+// var socket = io("http://localhost:3000")
+var socket = io("https://chatsocail.herokuapp.com/")
 
 socket.on("Server-send-dki-thatbai", function() {
     alert('co nguoi da dang ky roi')
